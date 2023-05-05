@@ -67,7 +67,6 @@ return {
 	    }
 	})
 
-
 	lsp.on_attach(function(client, bufnr)
 	  local opts = {buffer = bufnr, remap = false}
 
