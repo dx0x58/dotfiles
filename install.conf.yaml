@@ -16,7 +16,7 @@
     ~/.config/nvim:
       path: neovim/nvim
     ~/.config/ranger:
-      ranger: ranger
+      path: ranger
       
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
