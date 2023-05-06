@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+- clean: ['~']
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+
+- link:
+    ~/.tmux.conf:
+      path: tmux/tmux.conf
+    ~/.config/nvim:
+      path: neovim/nvim
+    ~/.config/ranger:
+      ranger: ranger
+      
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
