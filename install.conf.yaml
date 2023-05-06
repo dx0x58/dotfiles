@@ -17,6 +17,8 @@
       path: neovim/nvim
     ~/.config/ranger:
       path: ranger
+    ~/.config/starship.toml:
+      path: starship/starship.toml
       
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
