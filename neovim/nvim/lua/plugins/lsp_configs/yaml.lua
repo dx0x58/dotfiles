@@ -1,16 +1,17 @@
-
 local M = {}
 
 function M.Load(lspconfig)
-    lspconfig.yamlls.setup({
+    lspconfig.yamlls.setup {
         settings = {
             yaml = {
+                keyOrdering = false,
                 schemas = {
-                    ["https://raw.githubusercontent.com/OAI/OpenAPI-Specification/3.0.3/schemas/v2.0/schema.json"] = "**/api/openapi/*.yaml"
-                }
-            }
+                    -- ["/home/user/schemas/openapi/v3.0-schema.json"] = "/*"
+                    ["https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.0/schema.json"] = "**/api/openapi/*.yaml"
+                },
+            },
         }
-    })
+    }
 end
 
 return M

@@ -33,13 +33,15 @@ return {
 	})
 
 	--- Load servers configs ---
-    local configs = {'plugins.lsp_configs.lua'}
+    local configs = {
+        'ruby',
+        'yaml',
+        'lua',
+    }
     for _, conf_path in ipairs(configs) do
-        local config = require(conf_path)
+        local config = require('plugins.lsp_configs.'..conf_path)
         config.Load(lspconfig)
-    end 
-
-    --- Load servers configs ---
+    end
 
 	local cmp = require('cmp')
 	local cmp_select = { behavior = cmp.SelectBehavior.Select }
@@ -81,7 +83,6 @@ return {
 	  vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
 	  vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 	end)
-
 
 	lsp.setup()
 
