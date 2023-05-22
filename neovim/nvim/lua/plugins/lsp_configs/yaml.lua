@@ -6,7 +6,7 @@ function M.Load(lspconfig)
             yaml = {
                 keyOrdering = false,
                 schemas = {
-                     ["/home/user/schemas/openapi/v3.1-3.0-compat.json"] = "/*"
+                     ["~/dotfiles/schemas/openapi/v3.1-3.0-compat.json"] = "*/openapi/*.yaml"
                     -- ["https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.0/schema.json"] = "**/api/openapi/*.yaml"
                 },
             },

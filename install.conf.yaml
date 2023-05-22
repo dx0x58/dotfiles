@@ -19,6 +19,8 @@
       path: ranger
     ~/.config/starship.toml:
       path: starship/starship.toml
-      
+    ~/.config/alacritty.yml:
+      path: alacritty/alacritty.yml
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
