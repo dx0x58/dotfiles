@@ -30,6 +30,8 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.cmd('set autowriteall')
+
 -- Ranger
 -- vim.g.rnvimr_enable_ex = 1
 -- vim.g.rnvimr_enable_picker = 1
