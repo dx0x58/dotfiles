@@ -1,0 +1,11 @@
+import:
+  - 'C:\Users\maxim\dotfiles\alacritty\alacritty.yml'
+
+font:
+  size: 13.0
+
+window:
+  opacity: 0.95
+
+shell:
+  program: ubuntu run "tmux new-session -A -D -s main"
