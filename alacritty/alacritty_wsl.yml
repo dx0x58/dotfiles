@@ -3,9 +3,24 @@ import:
 
 font:
   size: 13.0
+  normal:
+    family: UbuntuMono NFM
+    style: Regular
 
+  bold:
+    family: UbuntuMono NFM
+    style: Bold
+
+  italic:
+    family: UbuntuMono NFM
+    style: Italic
 window:
   opacity: 0.95
+
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: V, mods: Control|Shift, chars: "\x16" }
+  - { key: Space, mods: Control, chars: "\x00" }
 
 shell:
   program: ubuntu run "tmux new-session -A -D -s main"
