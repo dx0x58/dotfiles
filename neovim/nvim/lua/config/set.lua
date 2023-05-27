@@ -32,6 +32,13 @@ vim.opt.colorcolumn = "80"
 
 vim.cmd('set autowriteall')
 
+-- Autoreload file if changed outside
+vim.o.autoread = true
+vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
+  command = "if mode() != 'c' | checktime | endif",
+  pattern = { "*" },
+})
+
 -- Ranger
 -- vim.g.rnvimr_enable_ex = 1
 -- vim.g.rnvimr_enable_picker = 1
