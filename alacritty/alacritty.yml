@@ -43,31 +43,80 @@ shell:
     - -s
     - main
 
+# key_bindings:
+#   - { key: A,   mods: Command,   chars: "\x01" }
+#   - { key: B,   mods: Command,   chars: "\x02" }
+#   # - { key: C,   mods: Command,   chars: "\x03" }
+#   - { key: D,   mods: Command,   chars: "\x04" }
+#   - { key: E,   mods: Command,   chars: "\x05" }
+#   - { key: F,   mods: Command,   chars: "\x06" }
+#   - { key: G,   mods: Command,   chars: "\x07" }
+#   - { key: H,   mods: Command,   chars: "\x08" }
+#   - { key: I,   mods: Command,   chars: "\x09" }
+#   - { key: J,   mods: Command,   chars: "\x0a" }
+#   - { key: K,   mods: Command,   chars: "\x0b" }
+#   - { key: L,   mods: Command,   chars: "\x0c" }
+#   - { key: M,   mods: Command,   chars: "\x0d" }
+#   - { key: N,   mods: Command,   chars: "\x0e" }
+#   - { key: O,   mods: Command,   chars: "\x0f" }
+#   - { key: P,   mods: Command,   chars: "\x10" }
+#   - { key: Q,   mods: Command,   chars: "\x11" }
+#   - { key: R,   mods: Command,   chars: "\x12" }
+#   - { key: S,   mods: Command,   chars: "\x13" }
+#   - { key: T,   mods: Command,   chars: "\x14" }
+#   - { key: U,   mods: Command,   chars: "\x15" }
+#   # - { key: V,   mods: Command,   chars: "\x16" }
+#   - { key: W,   mods: Command,   chars: "\x17" }
+#   - { key: X,   mods: Command,   chars: "\x18" }
+#   - { key: Y,   mods: Command,   chars: "\x19" }
+#   - { key: Z,   mods: Command,   chars: "\x1a" }
+#
+# ~/.config/alacritty/alacritty.yml
+
+# Set CMD key as CTRL key
 key_bindings:
-  - { key: A,   mods: Command,   chars: "\x01" }
-  - { key: B,   mods: Command,   chars: "\x02" }
-  # - { key: C,   mods: Command,   chars: "\x03" }
-  - { key: D,   mods: Command,   chars: "\x04" }
-  - { key: E,   mods: Command,   chars: "\x05" }
-  - { key: F,   mods: Command,   chars: "\x06" }
-  - { key: G,   mods: Command,   chars: "\x07" }
-  - { key: H,   mods: Command,   chars: "\x08" }
-  - { key: I,   mods: Command,   chars: "\x09" }
-  - { key: J,   mods: Command,   chars: "\x0a" }
-  - { key: K,   mods: Command,   chars: "\x0b" }
-  - { key: L,   mods: Command,   chars: "\x0c" }
-  - { key: M,   mods: Command,   chars: "\x0d" }
-  - { key: N,   mods: Command,   chars: "\x0e" }
-  - { key: O,   mods: Command,   chars: "\x0f" }
-  - { key: P,   mods: Command,   chars: "\x10" }
-  - { key: Q,   mods: Command,   chars: "\x11" }
-  - { key: R,   mods: Command,   chars: "\x12" }
-  - { key: S,   mods: Command,   chars: "\x13" }
-  - { key: T,   mods: Command,   chars: "\x14" }
-  - { key: U,   mods: Command,   chars: "\x15" }
-  # - { key: V,   mods: Command,   chars: "\x16" }
-  - { key: W,   mods: Command,   chars: "\x17" }
-  - { key: X,   mods: Command,   chars: "\x18" }
-  - { key: Y,   mods: Command,   chars: "\x19" }
-  - { key: Z,   mods: Command,   chars: "\x1a" }
+  # - { key: "0",        mods: Command,    chars: "\x0A" }  # CMD + 0
+  # - { key: "1",        mods: Command,    chars: "\x01" }  # CMD + 1
+  # - { key: "2",        mods: Command,    chars: "\x02" }  # CMD + 2
+  # - { key: "3",        mods: Command,    chars: "\x03" }  # CMD + 3
+  # - { key: "4",        mods: Command,    chars: "\x04" }  # CMD + 4
+  # - { key: "5",        mods: Command,    chars: "\x05" }  # CMD + 5
+  # - { key: "6",        mods: Command,    chars: "\x06" }  # CMD + 6
+  # - { key: "7",        mods: Command,    chars: "\x07" }  # CMD + 7
+  # - { key: "8",        mods: Command,    chars: "\x08" }  # CMD + 8
+  # - { key: "9",        mods: Command,    chars: "\x09" }  # CMD + 9
+  - { key: A,        mods: Command,    chars: "\x01" }  # CMD + A
+  - { key: B,        mods: Command,    chars: "\x02" }  # CMD + B
+  - { key: C,        mods: Command,    chars: "\x03" }  # CMD + C
+  - { key: D,        mods: Command,    chars: "\x04" }  # CMD + D
+  - { key: E,        mods: Command,    chars: "\x05" }  # CMD + F
+  - { key: F,        mods: Command,    chars: "\x06" }  # CMD + F
+  - { key: G,        mods: Command,    chars: "\x07" }  # CMD + G
+  - { key: H,        mods: Command,    chars: "\x08" }  # CMD + H
+  - { key: K,        mods: Command,    chars: "\x0B" }  # CMD + K
+  - { key: L,        mods: Command,    chars: "\x0C" }  # CMD + L
+  - { key: M,        mods: Command,    chars: "\x0D" }  # CMD + M
+  - { key: N,        mods: Command,    chars: "\x0E" }  # CMD + N
+  - { key: O,        mods: Command,    chars: "\x0F" }  # CMD + O
+  - { key: P,        mods: Command,    chars: "\x10" }  # CMD + P
+  - { key: Q,        mods: Command,    chars: "\x11" }  # CMD + Q
+  - { key: R,        mods: Command,    chars: "\x12" }  # CMD + R
+  - { key: S,        mods: Command,    chars: "\x13" }  # CMD + S
+  - { key: T,        mods: Command,    chars: "\x14" }  # CMD + T
+  - { key: U,        mods: Command,    chars: "\x15" }  # CMD + U
+  # - { key: V,        mods: Command,    chars: "\x16" }  # CMD + V
+  - { key: W,        mods: Command,    chars: "\x17" }  # CMD + W
+  - { key: X,        mods: Command,    chars: "\x18" }  # CMD + X
+  - { key: Z,        mods: Command,    chars: "\x1A" }  # CMD + Z
+  - { key: Comma,    mods: Command,    chars: "\x1B" }  # CMD + ,
+  - { key: Backslash,mods: Command,    chars: "\x1C" }  # CMD + \
+  - { key: Slash,    mods: Command,    chars: "\x1F" }  # CMD + /
+  - { key: Equals,    mods: Command,    chars: "\x0A" }  # CMD + -
+  - { key: Minus,    mods: Command,    chars: "\x1E" }  # CMD + -
+  - { key: Tab,      mods: Command,    chars: "\t"   }  # CMD + Tab
+  - { key: Up,       mods: Command,    chars: "\x1B\x5B\x41" }  # CMD + Up
+  - { key: Down,     mods: Command,    chars: "\x1B\x5B\x42" }  # CMD + Down
+  - { key: Right,    mods: Command,    chars: "\x1B\x5B\x43" }  # CMD + Right
+  - { key: Left,     mods: Command,    chars: "\x1B\x5B\x44" }  # CMD + Left
+  - { key: Key6,        mods: Command,    chars: "\x1E" } 
 
