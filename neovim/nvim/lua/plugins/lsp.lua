@@ -84,6 +84,8 @@ return {
             vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
             vim.keymap.set("n", "<leader>vc", function() vim.lsp.buf.completion() end, opts)
             vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+            -- reformat code
+            vim.keymap.set("n", "<leader>g", vim.lsp.buf.format)
         end)
 
         lsp.setup()
