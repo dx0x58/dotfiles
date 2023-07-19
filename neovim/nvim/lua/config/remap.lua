@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Explore)
+vim.keymap.set("n", "<leader>h", vim.cmd.NvimTreeToggle)
 
 -- move V-selected block top or down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -60,12 +60,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
-
--- local function save_file()
---   vim.api.nvim_command('write')
---   vim.api.nvim_echo({{'File saved!', 'Type'}}, true, {})
--- end
---
--- vim.keymap.set('n', '<C-s>', ':lua save_file()<CR>', { noremap = true, silent = true })
--- vim.keymap.set('i', '<C-s>', '<Esc>:lua save_file()<CR>a', { noremap = true, silent = true })
---

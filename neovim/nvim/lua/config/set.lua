@@ -39,6 +39,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
   pattern = { "*" },
 })
 
--- Ranger
--- vim.g.rnvimr_enable_ex = 1
--- vim.g.rnvimr_enable_picker = 1
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
