@@ -98,6 +98,9 @@ function M.Load(lspconfig)
             }
         }
     })
+
+    -- Rails Go to file
+    vim.api.nvim_set_keymap('n', '<C-S-t>', ':R<CR>', {noremap = true, silent = true})
 end
 
 return M

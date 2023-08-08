@@ -30,7 +30,8 @@ return {
             "rust_analyzer",
             "ruby_ls",
             "gopls",
-            "yamlls"
+            "yamlls",
+            "pylsp",
         })
 
         --- Load servers configs ---

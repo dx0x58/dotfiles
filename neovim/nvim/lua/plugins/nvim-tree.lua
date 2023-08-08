@@ -14,9 +14,9 @@ return {
             },
         })
 
-        vim.api.nvim_create_autocmd({"QuitPre"}, {
-    callback = function() vim.cmd("NvimTreeClose") end,
-})
+        vim.api.nvim_create_autocmd({ "QuitPre" }, {
+            callback = function() vim.cmd("NvimTreeClose") end,
+        })
 
         -- global
         vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", { silent = true, noremap = true })
@@ -58,5 +58,8 @@ return {
         vim.keymap.set("n", "L", vsplit_preview, { desc = "Vsplit Preview" })
         vim.keymap.set("n", "h", api.tree.close, { desc = "Close" })
         vim.keymap.set("n", "H", api.tree.collapse_all, { desc = "Collapse All" })
+
+        -- Define mapping for NvimTreeFindFile command
+        vim.api.nvim_set_keymap('n', '<A-F1>', ':NvimTreeFindFile<CR>', { noremap = true, silent = true })
     end
 }
