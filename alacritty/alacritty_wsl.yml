@@ -23,4 +23,7 @@ key_bindings:
   - { key: Space, mods: Control, chars: "\x00" }
 
 shell:
-  program: ubuntu run "tmux new-session -A -D -s main"
+  program: ubuntu
+  args:
+    - run
+    - "tmux new-session -A -D -s main"

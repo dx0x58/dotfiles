@@ -2,4 +2,7 @@ import:
   - 'C:\Users\maxim\dotfiles\alacritty\alacritty_wsl.yml'
 
 shell:
-  program: kali run "tmux new-session -A -D -s main"
+  program: kali
+  args:
+    - run
+    - "tmux new-session -A -D -s main"
