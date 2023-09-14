@@ -27,3 +27,6 @@ asdf plugin-add golang https://github.com/kennyp/asdf-golang.git;
 asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git;
 
 asdf install neovim stable && asdf global neovim stable;
+
+brew tap arl/arl;
+brew install gitmux;
