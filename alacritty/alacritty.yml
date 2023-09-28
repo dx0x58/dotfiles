@@ -37,25 +37,9 @@ scrolling:
 live_config_reload: true
 
 shell:
-  program: /opt/homebrew/bin/tmux
-  args:
-    - new-session
-    - -D
-    - -A
-    - -s
-    - main
+  program: /opt/homebrew/bin/tmux new-session -D -A -s main
 # Set CMD key as CTRL key
 key_bindings:
-  # - { key: "0",        mods: Command,    chars: "\x0A" }  # CMD + 0
-  # - { key: "1",        mods: Command,    chars: "\x01" }  # CMD + 1
-  # - { key: "2",        mods: Command,    chars: "\x02" }  # CMD + 2
-  # - { key: "3",        mods: Command,    chars: "\x03" }  # CMD + 3
-  # - { key: "4",        mods: Command,    chars: "\x04" }  # CMD + 4
-  # - { key: "5",        mods: Command,    chars: "\x05" }  # CMD + 5
-  # - { key: "6",        mods: Command,    chars: "\x06" }  # CMD + 6
-  # - { key: "7",        mods: Command,    chars: "\x07" }  # CMD + 7
-  # - { key: "8",        mods: Command,    chars: "\x08" }  # CMD + 8
-  # - { key: "9",        mods: Command,    chars: "\x09" }  # CMD + 9
   - { key: A,        mods: Command,    chars: "\x01" }  # CMD + A
   - { key: B,        mods: Command,    chars: "\x02" }  # CMD + B
   - { key: C,        mods: Command,    chars: "\x03" }  # CMD + C
@@ -90,21 +74,3 @@ key_bindings:
   - { key: Right,    mods: Command,    chars: "\x1B\x5B\x43" }  # CMD + Right
   - { key: Left,     mods: Command,    chars: "\x1B\x5B\x44" }  # CMD + Left
   - { key: Key6,        mods: Command,    chars: "\x1E" }
-
-
-  # - { key: Period,      mods: Option, chars: "\x1b[1;3C" } # Option+.
-  # - { key: Comma,       mods: Option, chars: "\x1b[1;3D" } # Option+,
-  # - { key: Key1,        mods: Option, chars: "\x1b[1;3~" } # Option+1
-  # - { key: Key2,        mods: Option, chars: "\x1b[1;4~" } # Option+2
-  # - { key: Key3,        mods: Option, chars: "\x1b[1;5~" } # Option+3
-  # - { key: Key4,        mods: Option, chars: "\x1b[1;6~" } # Option+4
-  # - { key: Key5,        mods: Option, chars: "\x1b[1;7~" } # Option+5
-  # - { key: Key6,        mods: Option, chars: "\x1b[1;8~" } # Option+6
-  # - { key: Key7,        mods: Option, chars: "\x1b[1;9~" } # Option+7
-  # - { key: Key8,        mods: Option, chars: "\x1b[1;10~" } # Option+8
-  # - { key: Key9,        mods: Option, chars: "\x1b[1;11~" } # Option+9
-  # - { key: Key0,        mods: Option, chars: "\x1b[1;12~" } # Option+0
-  # - { key: P,        mods: Option, chars: "\x10" }       # Option+p
-  # - { key: C,        mods: Option, chars: "\x03" }       # Option+c
-  #
-  #

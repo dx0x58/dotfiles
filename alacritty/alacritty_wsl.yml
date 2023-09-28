@@ -4,15 +4,15 @@ import:
 font:
   size: 13.0
   normal:
-    family: UbuntuMono NFM
+    family: UbuntuMono Nerd Font Mono
     style: Regular
 
   bold:
-    family: UbuntuMono NFM
+    family: UbuntuMono Nerd Font Mono
     style: Bold
 
   italic:
-    family: UbuntuMono NFM
+    family: UbuntuMono Nerd Font Mono
     style: Italic
 window:
   opacity: 0.95
@@ -23,7 +23,4 @@ key_bindings:
   - { key: Space, mods: Control, chars: "\x00" }
 
 shell:
-  program: ubuntu
-  args:
-    - run
-    - "tmux new-session -A -D -s main"
+  program: wsl
