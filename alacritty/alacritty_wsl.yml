@@ -24,3 +24,6 @@ key_bindings:
 
 shell:
   program: wsl
+  args:
+    - --exec
+    - "tmux new-session -A -D -s main"

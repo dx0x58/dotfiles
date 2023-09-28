@@ -37,7 +37,8 @@ scrolling:
 live_config_reload: true
 
 shell:
-  program: /opt/homebrew/bin/tmux new-session -D -A -s main
+  program: /opt/homebrew/bin/tmux "tmux new-session -A -D -s main"
+
 # Set CMD key as CTRL key
 key_bindings:
   - { key: A,        mods: Command,    chars: "\x01" }  # CMD + A
