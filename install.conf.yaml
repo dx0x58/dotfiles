@@ -13,14 +13,21 @@
 - link:
     ~/.tmux.conf:
       path: tmux/tmux.conf
+    ~/.config/mutt:
+      path: mutt
     ~/.config/nvim:
-      path: neovim/nvim
+      path: neovim
     ~/.config/ranger:
       path: ranger
     ~/.config/starship.toml:
       path: starship/starship.toml
     ~/.config/alacritty.yml:
       path: alacritty/alacritty.yml
+    ~/.zshenv:
+      path: zsh/.zshenv
+    ~/.config/zsh:
+      path:
+        zsh
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
