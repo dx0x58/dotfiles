@@ -1,6 +1,6 @@
 env:
   TERM: xterm-256color
-  LC_ALL: ru_RU.UTF-8
+  LC_ALL: en_US.UTF-8
 
 font:
   size: 19.0
@@ -17,27 +17,33 @@ font:
     style: Italic
 
 draw_bold_text_with_bright_colors: true
-# alt_send_esc: true
 window:
   option_as_alt: 'OnlyLeft'
   dimensions:
-    columns: 170
-    lines: 40
+    columns: 300
+    lines: 60
   padding:
     x: 6
     y: 6
   dynamic_padding: false
   dynamic_title: true
-  opacity: 0.85
+  opacity: 0.95
+  decoration: false
 
 scrolling:
-  history: 10000
+  history: 50000
   multiplier: 5
 
 live_config_reload: true
 
 shell:
-  program: /opt/homebrew/bin/tmux "tmux new-session -A -D -s main"
+  program: /opt/homebrew/bin/tmux 
+  args:
+   - new-session
+   - -A 
+   - -D 
+   - -s 
+   - main
 
 # Set CMD key as CTRL key
 key_bindings:

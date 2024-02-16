@@ -25,9 +25,16 @@
       path: alacritty/alacritty.yml
     ~/.zshenv:
       path: zsh/.zshenv
+    ~/.pryrc:
+      path: pry/.pryrc
     ~/.config/zsh:
       path:
         zsh
+    ~/.ideavimrc:
+      path: ideavim/.ideavimrc
+    ~/.ruby-lsp/Gemfile:
+      path:
+        ruby-lsp/Gemfile
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

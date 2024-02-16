@@ -56,3 +56,10 @@ tags
 [._]*.un~
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,macos
+#
+#
+# Custom
+**/zsh/.zsh_sessions/*
+**/zsh/.zsh_history
+**/zsh/.zshrc.*
+**/zsh/.zcomp*

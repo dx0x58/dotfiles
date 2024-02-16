@@ -1,0 +1,83 @@
+" https://raw.githubusercontent.com/wiki/JetBrains/ideavim/set-commands.md
+
+set relativenumber                " set relative line numbers
+set scrolloff=10                  " keep some lines before and after the cursor visible
+set showmode                      " show current mode
+set showcmd                       " show incomplete commands
+set visualbell                    " no beeping
+set hlsearch                      " highlight search occurrences
+set incsearch                     " show search results while typing
+set ignorecase                    " ignore case in search patterns
+set smartcase                     " no ignore case when pattern is uppercase
+set incsearch                     " show search results while typing
+set wrapscan                      " searches wrap around the end of the file
+set highlightedyank               " highlight yanked text
+set easymotion                    " emulate vim-easymotion plugin
+set notimeout                     " don't timeout on mappings
+set sneak                         " emulate vim-sneak plugin
+set gdefault                      " substitute all occurrences in line per default
+set history=10000                 " keep x lines of command line history
+set scrolloff=5 sidescrolloff=10  " keep some lines before and after the cursor visible
+set clipboard=unnamedplus,unnamed,ideaput " integrate with system clipboard
+
+set multiple-cursors
+set commentary
+set surround                      " emulate vim-surround plugin
+set ideajoin
+set ideastatusicon=disabled
+
+
+" set <leader> to <space>
+let mapleader = " "
+imap jk <Esc>
+
+" edit ideavim config
+nmap <leader>vv :e ~/.ideavimrc<CR>
+nmap <leader>vr :source ~/.ideavimrc<CR>
+
+" Tab navigation
+nmap <A-n> :tabnext<CR>
+nmap <A-p> :tabprev<CR>\
+
+" Easy visual indentation
+vmap < <gv
+vmap > >gv
+
+" Popup navigation
+imap <C-j> <Action>(PopupMenu-selectNext)
+imap <C-k> <Action>(PopupMenu-selectPrev)
+
+nmap <leader>d "_dP
+vmap <leader>d "_dP
+
+" File navigation
+map <leader>ff <action>(GotoFile)
+map <leader>fr <action>(RecentFiles)
+map <leader>fc <action>(FindInPath)
+map <leader><leader> <Action>(RecentFiles)
+map <leader>fl <action>(RecentLocations)
+map <leader>fs <action>(NewScratchFile)
+
+
+
+" ReformatCode
+nmap <leader>f  :action ReformatCode<CR>
+
+" Window splits
+map <leader>wv <Action>(SplitVertically)
+map <leader>ws <Action>(SplitHorizontally)
+map <leader>wu <Action>(Unsplit)
+map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
+
+" Go to code
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
+nmap <leader>gt <Action>(GotoTest)
+nmap <leader>gf <Action>(Back)
+nmap <leader>gb <Action>(Forward)
+
+" Move around
+nmap <c-o> :action Back<cr>
+nmap <c-i> :action Forward<cr>

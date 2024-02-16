@@ -1,0 +1,22 @@
+set timeout=10
+
+set imap_user = maxim_ek@mail.ru
+set imap_pass = $MAIL_TOKEN
+set spoolfile = imaps://imap.mail.ru/INBOX
+set folder = imaps://imap.mail.ru:993
+ 
+
+set smtp_url = "smtp://maxim_ek@smtp.mail.ru:587/"
+set smtp_pass = $imap_pass
+set ssl_force_tls = yes # Require encrypted connection
+
+set editor = "vim" 
+set edit_headers = yes  # See the headers when editing
+set charset = UTF-8
+unset use_domain  # because joe@localhost is just embarrassing
+set realname = "Maxim Derbenev"
+set from = "maxim_ek@mail.ru"
+set use_from = yes
+
+bind index G imap-fetch-mail
+
