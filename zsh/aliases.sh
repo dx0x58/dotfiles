@@ -23,6 +23,7 @@ alias cat="bat"
 #==========================================
 # Git
 #==========================================
+alias remaster="git stash && gco master && ggpull && gco - && git rebase master && git stash pop"
 
 #==========================================
 # Vcpkg
