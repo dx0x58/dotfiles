@@ -18,6 +18,10 @@ autoload bashcompinit
 bashcompinit
 source /Users/user/vcpkg/scripts/vcpkg_completion.zsh
 
+
+# Sbm-cli
+source /Users/user/.sbm-cli/completion/zsh/sbm-cli
+
 navicat() {
   rm -rf ~/Library/Application\ Support/PremiumSoft\ CyberTech/Navicat\ CC/Navicat\ Premium
   NAVICATFILENAME=$(ls -d ~/Library/Preferences/* | grep -i navicat)

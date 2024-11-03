@@ -19,6 +19,9 @@ alias lg="lazygit"
 alias mutt="neomutt"
 alias ls="eza"
 alias cat="bat"
+cd() {
+    __zoxide_z "$@";
+}
 
 #==========================================
 # Git
@@ -28,4 +31,3 @@ alias cat="bat"
 # Vcpkg
 #==========================================
 alias vcpkg="/Users/user/vcpkg/vcpkg"
-
