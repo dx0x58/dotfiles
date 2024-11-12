@@ -26,3 +26,4 @@ plugins=(
 # Scipts Inits
 #==========================================
 source ~/.config/zsh/inits.sh
+
