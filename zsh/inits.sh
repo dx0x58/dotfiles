@@ -20,6 +20,8 @@ source /Users/user/vcpkg/scripts/vcpkg_completion.zsh
 
 
 # Sbm-cli
+export PATH="$HOME/.sbm-cli/usr/bin:$PATH"
+autoload -U compinit; compinit
 source /Users/user/.sbm-cli/completion/zsh/sbm-cli
 
 navicat() {
