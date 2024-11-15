@@ -19,9 +19,15 @@ alias lg="lazygit"
 alias mutt="neomutt"
 alias ls="eza"
 alias cat="bat"
+
+if uname -a | grep -qi WSL; then
+
+else 
 cd() {
     __zoxide_z "$@";
 }
+
+fi
 
 #==========================================
 # Git
