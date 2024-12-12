@@ -21,8 +21,8 @@
       path: ranger
     ~/.config/starship.toml:
       path: starship/starship.toml
-    ~/.config/alacritty.yml:
-      path: alacritty/alacritty.yml
+    ~/.config/alacritty.toml:
+      path: alacritty/alacritty.toml
     ~/.zshenv:
       path: zsh/.zshenv
     ~/.pryrc:
