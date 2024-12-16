@@ -14,13 +14,13 @@ eval "$(zoxide init zsh)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Vcpkg
-autoload bashcompinit
-bashcompinit
-source /Users/user/vcpkg/scripts/vcpkg_completion.zsh
+# autoload bashcompinit
+# bashcompinit
+# source /Users/user/vcpkg/scripts/vcpkg_completion.zsh
 
 
 # Sbm-cli
-export PATH="$HOME/.sbm-cli/usr/bin:$PATH"
+export PATH="$HOME/.asdf/shims:$HOME/.sbm-cli/usr/bin:$PATH"
 autoload -U compinit; compinit
 source /Users/user/.sbm-cli/completion/zsh/sbm-cli
 
