@@ -38,3 +38,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [ln -sf ~/.config/zsh/.zshrc ~/.zshrc, Zsh link]
