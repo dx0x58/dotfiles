@@ -32,9 +32,13 @@
         zsh
     ~/.ideavimrc:
       path: ideavim/.ideavimrc
-    ~/.ruby-lsp/Gemfile:
-      path:
-        ruby-lsp/Gemfile
+    # ~/.ruby-lsp/Gemfile:
+    #   path:
+    #     ruby-lsp/Gemfile
+    ~/.xbindkeysrc:
+      path: xbindkeysrc/.xbindkeysrc
+    ~/sync_clipboard.sh:
+      path: xbindkeysrc/sync_clipboard.sh
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

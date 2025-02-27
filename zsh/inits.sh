@@ -1,10 +1,12 @@
 source $ZSH/oh-my-zsh.sh
 
 # Init brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ "$(uname)" == "Darwin" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 
-# ASDF
-source "$HOME/.asdf/asdf.sh"
 
 # Zoxide
 eval "$(zoxide init zsh)"
@@ -13,16 +15,7 @@ eval "$(zoxide init zsh)"
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Vcpkg
-# autoload bashcompinit
-# bashcompinit
-# source /Users/user/vcpkg/scripts/vcpkg_completion.zsh
-
-
-# Sbm-cli
-export PATH="$HOME/.asdf/shims:$HOME/.sbm-cli/usr/bin:$PATH"
-autoload -U compinit; compinit
-source /Users/user/.sbm-cli/completion/zsh/sbm-cli
+eval "$(~/.local/bin/mise activate zsh)"
 
 navicat() {
   rm -rf ~/Library/Application\ Support/PremiumSoft\ CyberTech/Navicat\ CC/Navicat\ Premium

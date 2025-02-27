@@ -1,7 +1,7 @@
 
 source ~/.config/zsh/env.sh
 source ~/.config/zsh/aliases.sh
-source ~/.config/secrets.sh
+source ~/.config/zsh/tmp.sh
 
 #==========================================
 # Appearance

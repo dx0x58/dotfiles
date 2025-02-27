@@ -1,7 +1,7 @@
 #==========================================
 # System
 #==========================================
-alias vim="nvim"
+alias vim="hx"
 alias sdou="sudo"
 alias suod="sudo"
 
